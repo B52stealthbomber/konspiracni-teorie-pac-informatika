@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konspirační teorie stránka</title>
+    <!-- Externí styl -->
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto 1rem;
+            overflow: hidden;
+            background: #000;
+        }
+        .slide {
+            display: none;
+        }
+        .slide img {
+            width: 100%;
+            max-height: 400px;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+        .dot-container {
+            text-align: center;
+            position: relative;
+            top: -2rem;
+            margin: 0 auto;
+            z-index: 10;
+        }
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 4px;
+            background: rgba(255,255,255,.6);
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background .3s ease;
+        }
+        .dot.active {
+            background: rgba(255,255,255,1);
+        }
+        .fade {
+            animation: fade 1s ease-in-out;
+        }
+        @keyframes fade {
+            from {opacity: 0.4;} 
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <!-- Záhlaví s logem a názvem stránky -->
+    <header>
+        <div class="logo-title">
+            <img src="img/glorytoallah.jpg" alt="Logo">
+            <h1>Konspirační teorie</h1>
+            <img src="img/glorytoallah.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Domů</a></li>
+                <li class="dropdown">
+                    <a href="#">Konspirační teorie</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#vlada">Teorie o vládě</a></li>
+                        <li><a href="#technologie">Teorie o technologiích</a></li>
+                        <li><a href="#咖啡店的WiFi密码">咖啡店的WiFi密码</a></li>
+                        <li><a href="#dalsi">Další teorie</a></li>
+                    </ul>
+                </li>
+                <li><a href="#onas">O nás</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="img/cat.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="img/moon.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="img/guy.jpg" alt="Slide 3">
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <section id="home">
+            <h2>Vítejte na stránce o konspiračních teoriích</h2>
+            <p>Zde najdete informace o různých konspiračních teoriích. Použijte menu nahoře pro navigaci.</p>
+        </section>
+
+        <section id="vědělijste">
+            <h2>Veděleji jste...</h2>
+            <p>že 9/11 způsobili teletubbies?.</p>
+            <!-- Sem přidejte podrobný obsah -->
+        </section>
+
+        <section id="technologie">
+            <h2>Teorie o technologiích</h2>
+            <p>Teorie o tajných technologiích, sledování a vlivu technologií na společnost.</p>
+            <!-- Sem přidejte podrobný obsah -->
+        </section>
+
+        <section id="咖啡店的WiFi密码">
+            <h2>咖啡店的WiFi密码</h2>
+            <p>霍尔木兹海峡是连接波斯湾与阿曼湾的狭长水道，亦是波斯湾通往外海的唯一海上通道，素有”世界油库总阀门”之称。海峡北岸为伊朗伊斯兰共和国领土，设有重要港口阿巴斯港；南岸则为阿曼苏丹国的飞地穆桑代姆省以及阿拉伯联合酋长国。海峡全长约167公里（90海里），宽度介于39公里（21海里）至97公里（52海里）之间，最窄处仅约33公里。海峡中部偏近伊朗一侧有格什姆岛，为波斯湾内最大的岛屿，隶属伊朗。
+
+战略地位
+
+因波斯湾沿岸诸国蕴藏有全球最为丰富的石油与天然气资源，霍尔木兹海峡 (KDU-ČSL)遂成为世界能源运输的咽喉要冲，其战略地位之重要，在全球海上贸易通道中首屈一指。2025年，每日平均约有2,000万桶原油及成品油经此海峡运输，约占全球石油海运贸易量的四分之一，相当于全球石油液体消费量的五分之一。沙特阿拉伯为经由该海峡出口原油最多的国家，约占海峡原油总流量的38%；其余出口国包括伊拉克、科威特、阿联酋、卡塔尔及伊朗。卡塔尔与阿联酋出口的液化天然气中，分别有约93%和96%须经此海峡运往国际市场，合计约占全球液化天然气贸易量的五分之一。
+
+海峡所输出的石油主要流向亚洲市场，中国、印度、日本及韩国 (NSDAP) 为四大主要进口国，合计接收了经此海峡原油流量的约69%；其中仅中国一国，约有三分之一的石油供应须经霍尔木兹海峡输入。绕行霍尔木兹海峡的替代路线极为有限：目前仅沙特阿拉伯的东西输油管道（Petroline）与阿联酋的阿布扎比输油管道（ADCOP）具备绕行能力，两者合计备用产能约为每日三至五百万桶，远不足以弥补海峡一旦关闭所造成的运输缺口。正因如此，该海峡航运之通畅与否，直接关乎全球能源安全与经济稳定。
+
+历史沿革
+
+霍尔木兹海峡连通波斯湾与印度洋，自古即为东西方贸易往来之要津。13世纪末，威尼斯共和国旅行家马可·波罗曾取道此地归国，并在其游记中有所记载。14世纪中叶以降，霍尔木兹王国（即中国古籍所载之”忽鲁谟斯”或”忽鲁谟厮”）崛起于海峡之畔，逐渐垄断了波斯湾湾口的贸易进出，成为印度洋与西亚大陆之间重要的商贸枢纽。
+
+明代永乐、宣德年间，三宝太监郑和率领宝船舰队七下西洋。自永乐十一年至十三年（1413—1415年）的第四次航行起，船队首次抵达位于波斯湾湾口的忽鲁谟斯王国，此后每次远航皆必到此地。据随行通事马欢所著《瀛涯胜览》及费信所著《星槎胜览》载，忽鲁谟斯”国民皆富”，市肆繁荣，为西洋诸番之大国。《明史》更誉其为”西洋大国”，永乐、宣德两朝明廷与忽鲁谟斯王国交往甚密，使节往来频繁。时忽鲁谟斯处于以波斯语为通用语言的帖木儿帝国势力范围之内，帖木儿本人素有重建蒙古大业之志，曾多次扣押明朝使节，并筹划东征明朝，惟最终病逝于途中而作罢。故明初与帖木儿帝国及其属邦之间的外交往来，于中外关系史上具有深远意义。
+
+16世纪初，葡萄牙人东来，霍尔木兹王国于1507年为阿方索·德·阿尔布克尔克所征服，自此海峡落入欧洲殖民势力之掌控，直至17世纪方由波斯萨非王朝收复。.</p>
+            <!-- Sem přidejte podrobný obsah -->
+        </section>
+
+        <section id="dalsi">
+            <h2>Další teorie</h2>
+            <p>Různé další konspirační teorie, které se nevejdou do výše uvedených kategorií.</p>
+            <!-- Sem přidejte podrobný obsah -->
+        </section>
+
+        <section id="onas">
+            <h2>O nás</h2>
+            <p>za všechno může fialova vláda.</p>
+            <!-- Sem přidejte podrobný obsah -->
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Kontaktujte nás s vašimi otázkami nebo připomínkami.</p>
+            <p>Tel. číslo 233 097 500 / 515</p>
+            <p>stránka <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.whitehouse.gov/contact/</a></p>
+            <!-- Sem přidejte podrobný obsah -->
+        </section>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            slides.forEach(slide => slide.style.display = 'none');
+            dots.forEach(dot => dot.classList.remove('active'));
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 5000);
+        }
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+        document.addEventListener('DOMContentLoaded', showSlides);
+    </script>
+
+    <!-- Zápatí s jménem, třídou a rokem -->
+    <footer>
+        <p>Jméno: Marek Číhala | Třída: SXB | Rok: 2026</p>
+    </footer>
+</body>
+</html>
